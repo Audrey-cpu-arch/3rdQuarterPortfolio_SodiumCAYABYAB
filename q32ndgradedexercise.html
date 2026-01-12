@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    body{
+        text-align: center;
+        
+    }
+
+    </style>
+
+    </head>
+    <body>
+     
+        <form method = "post" action = "submit" required>
+             <label for = 'id'> #1 information </label>
+   
+        <input id = "studentid" type = "number" required>
+<br>
+ <label for = 'fullname'> #2 information </label>
+        
+        <input id = "fullname" type = "text" required>
+<br>
+ <label for = 'Birthday'> #3 information </label>
+       
+        <input id = "birthday" type = "date" required>
+<br>
+ <label for = 'Email address'> #4 information </label>
+        <input id = "emailaddress" type = "email" required>
+<br>
+         <label for = 'Mobile Phone'> #5 information </label>
+        <input id = "mobilephone" type = "text" required>
+<br>
+
+ <label for = 'Grade Level'> #6 information </label>
+        <select id = "gradelevel" required>
+            <option value = "seventhgrade"> 7 </option>
+            <option value = "eighthgrade"> 8 </option>
+            <option value = "ninthgrade"> 9 </option>
+            <option value = "tenthgrade"> 10 </option>
+            <option value = "eleventhgrade"> 11 </option>
+            <option value = "twelfthgrade"> 12 </option>
+        </select>
+
+<br>
+         <label for = 'Intern / Extern'> #7 information </label>
+         <br>
+        <input type = "radio" id="intern">
+        <label for="intern">Intern</label>
+        <input type = "radio" id="extern">
+        <label for="extern">Extern</label>
+
+<br>
+        <label for = 'Preferred Organization / Club'> #8 information </label>
+       <select id = "club" required>
+            <option value = "christian"> ACTS </option>
+            <option value = "firsbee"> ALIANTI </option>
+            <option value = "astronomy"> ASTROSOC </option>
+            <option value = "chemistry"> ATOM </option>
+            <option value = "photography"> EXPOSURE </option>
+            <option value = "others"> other </option>
+        </select>
+
+<br>
+         <label for = 'reason'> #9 information </label>
+         <br>
+        <textarea id = "reasonsforjoining" rows = "4" cols = "100"> </textarea>
+
+
+    <br>
+        <class id = "submitreset">
+<input type="submit">
+<input type="reset">
+</class>
+</form>
+    </body>
+</html>
