@@ -18,7 +18,7 @@
      
         
 
-        <form method = "post" action = "submit">
+        <form method = "post" action = "submit" onsubmit = "submitform()"  onreset = "resetform()"> 
 
             <div>
              <label for = 'id'> #1 information </label>
@@ -61,14 +61,17 @@
         </select>
 </div>
 
-         <label for = 'Intern / Extern'> #7 information </label>
+<div>
+         <label for = 'Intern / Extern' reuqired> #7 information </label>
        
         <input type = "radio" id="intern">
         <label for="intern">Intern</label>
         <input type = "radio" id="extern">
         <label for="extern">Extern</label>
+</div>
 
 
+<div>
         <label for = 'Preferred Organization / Club'> #8 information </label>
        <select id = "club" required>
             <option value = "christian"> ACTS </option>
@@ -78,21 +81,38 @@
             <option value = "photography"> EXPOSURE </option>
             <option value = "others"> other </option>
         </select>
+</div>
 
+<div>
 
          <label for = 'reason'> #9 information </label>
          <br>
         <textarea id = "reasonsforjoining" rows = "4" cols = "100"> </textarea>
+        </div>
 
 
   
 <div>       
-<input type="submit">
+<input type="submit" onclick="alert('Are you sure you want to submit the form?')">
 </div>
+
 <div>    
-<input type="reset">
+<input type="reset" onclick="alert('Are you sure you want to reset the form?')">
 </div>
 
 </form>
+
+<script>
+function resetform(){
+    alert("The form has been resetted.");
+}
+
+
+function submitform(){
+    alert("The form has been submitted.");
+}
+
+
+</script>
     </body>
 </html>
